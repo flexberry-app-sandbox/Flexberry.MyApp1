@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Building",
+  "name": "IISMyApp1BuildingE",
+  "className": "BuildingE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-app1-building",
+      "modelProjection": "BuildingE"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "My app1",
+  "applicationTitle": "My app1",
+  "items": [
+    {
+      "link": null,
+      "menuName": "my-app1",
+      "caption": "MyApp1",
+      "title": "MyApp1",
+      "children": [
+        {
+          "link": "i-i-s-my-app1-building-l",
+          "menuName": null,
+          "caption": "Building",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-my-app1-employee-l",
+          "menuName": null,
+          "caption": "Employee",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

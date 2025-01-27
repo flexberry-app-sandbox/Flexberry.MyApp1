@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Employee",
+  "name": "IISMyApp1EmployeeE",
+  "className": "EmployeeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-app1-employee",
+      "modelProjection": "EmployeeE"
+    }
+  ]
+}

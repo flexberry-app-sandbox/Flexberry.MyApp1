@@ -1,0 +1,1 @@
+docker-compose -p myapp1 up -d

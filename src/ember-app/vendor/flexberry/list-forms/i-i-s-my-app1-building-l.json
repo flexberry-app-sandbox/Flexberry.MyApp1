@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-my-app1-building-e",
+  "editForm": "i-i-s-my-app1-building-e",
+  "external": false,
+  "caption": "Building",
+  "name": "IISMyApp1BuildingL",
+  "className": "BuildingL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-app1-building",
+      "modelProjection": "BuildingL"
+    }
+  ]
+}

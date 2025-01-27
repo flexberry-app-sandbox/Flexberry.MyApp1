@@ -1,0 +1,74 @@
+<h3 class="ui header">{{t "forms.i-i-s-my-app1-employee-e.caption"}}{{#if readonly}} ({{t "forms.edit-form.readonly"}}){{/if}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    {{flexberry-edit-panel
+      showCloseButton=true
+      deepMount=true
+      readonly=readonly
+      buttons=(array
+        (hash
+          type="submit"
+          class="save-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.save-button-text")
+          icon="icon icon-save"
+          action="save")
+        (hash
+          type="submit"
+          class="save-close-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.saveAndClose-button-text")
+          icon="icon icon-save-close"
+          action="saveAndClose"
+        ))
+    }}
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.firstName
+      class=(if (v-get validationModel "firstName" "isInvalid") "error")
+      label=(t "forms.i-i-s-my-app1-employee-e.firstName-caption")
+      data-test-i-i-s-my-app1-employee-e-firstName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "firstName" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.lastName
+      class=(if (v-get validationModel "lastName" "isInvalid") "error")
+      label=(t "forms.i-i-s-my-app1-employee-e.lastName-caption")
+      data-test-i-i-s-my-app1-employee-e-lastName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "lastName" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.patronymic
+      class=(if (v-get validationModel "patronymic" "isInvalid") "error")
+      label=(t "forms.i-i-s-my-app1-employee-e.patronymic-caption")
+      data-test-i-i-s-my-app1-employee-e-patronymic=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "patronymic" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-my-app1-employee-e.birthDate-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.birthDate
+      class=(if (v-get validationModel "birthDate" "isInvalid") "error")
+      data-test-i-i-s-my-app1-employee-e-birthDate=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "birthDate" "message")}}
+  </div>
+</form>

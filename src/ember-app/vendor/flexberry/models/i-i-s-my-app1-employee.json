@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISMyApp1Employee",
+  "modelName": "i-i-s-my-app1-employee",
+  "className": "Employee",
+  "nameSpace": "IIS.MyApp1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "birthDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "patronymic",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "room",
+      "relatedTo": "i-i-s-my-app1-room",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "EmployeeE",
+      "modelName": "i-i-s-my-app1-employee",
+      "attrs": [
+        {
+          "name": "firstName",
+          "caption": "First name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "lastName",
+          "caption": "Last name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "patronymic",
+          "caption": "Patronymic",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "birthDate",
+          "caption": "Birth date",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "EmployeeL",
+      "modelName": "i-i-s-my-app1-employee",
+      "attrs": [
+        {
+          "name": "firstName",
+          "caption": "First name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "lastName",
+          "caption": "Last name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "patronymic",
+          "caption": "Patronymic",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "birthDate",
+          "caption": "Birth date",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

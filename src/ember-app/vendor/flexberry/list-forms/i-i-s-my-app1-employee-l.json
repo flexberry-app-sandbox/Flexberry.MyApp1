@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-my-app1-employee-e",
+  "editForm": "i-i-s-my-app1-employee-e",
+  "external": false,
+  "caption": "Employee",
+  "name": "IISMyApp1EmployeeL",
+  "className": "EmployeeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-app1-employee",
+      "modelProjection": "EmployeeL"
+    }
+  ]
+}

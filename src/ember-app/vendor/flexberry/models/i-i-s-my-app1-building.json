@@ -1,0 +1,81 @@
+﻿{
+  "name": "IISMyApp1Building",
+  "modelName": "i-i-s-my-app1-building",
+  "className": "Building",
+  "nameSpace": "IIS.MyApp1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "address",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "room",
+      "relatedTo": "i-i-s-my-app1-room",
+      "inverse": "building"
+    }
+  ],
+  "projections": [
+    {
+      "name": "BuildingE",
+      "modelName": "i-i-s-my-app1-building",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "BuildingL",
+      "modelName": "i-i-s-my-app1-building",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

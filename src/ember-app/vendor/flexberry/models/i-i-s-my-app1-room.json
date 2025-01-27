@@ -1,0 +1,62 @@
+﻿{
+  "name": "IISMyApp1Room",
+  "modelName": "i-i-s-my-app1-room",
+  "className": "Room",
+  "nameSpace": "IIS.MyApp1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "number",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "building",
+      "relatedTo": "i-i-s-my-app1-building",
+      "inverse": "room"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "RoomE",
+      "modelName": "i-i-s-my-app1-room",
+      "attrs": [
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "RoomL",
+      "modelName": "i-i-s-my-app1-room",
+      "attrs": [
+        {
+          "name": "number",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
